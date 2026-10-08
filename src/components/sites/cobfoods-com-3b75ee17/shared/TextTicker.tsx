@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore, type CSSProperties, type ReactNode } from "react";
 import { isTouchDevice, lerp } from "./device";
 import { useScrollCall } from "./hooks";
 import { ENTER } from "./site-scroll";
@@ -29,17 +29,15 @@ interface TextTickerProps {
 }
 
 const MIN_VELOCITY = 0.08;
+const subscribeNever = () => () => {};
 
 export function TextTicker({ className, children, pauseOnHover = false, scrollOffset = "-200px,0", textClassName = "m-0 p-0" }: TextTickerProps) {
   const ref = useRef<HTMLDivElement>(null);
   const templateRef = useRef<HTMLDivElement>(null);
   const [copies, setCopies] = useState(1);
-  const [mode, setMode] = useState<"js" | "css">("js");
+  // Server render assumes desktop ("js"); the client picks css mode on touch UAs.
+  const mode = useSyncExternalStore(subscribeNever, () => (isTouchDevice() ? "css" : "js"), () => "js" as const);
   const inView = useRef(false);
-
-  useEffect(() => {
-    setMode(isTouchDevice() ? "css" : "js");
-  }, []);
 
   // Duplicate the template until the copies cover the ticker width (+1 for the wrap).
   useEffect(() => {

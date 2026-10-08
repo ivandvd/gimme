@@ -1,0 +1,12 @@
+/** Page-transition overlay (theme `[data-site-transition]`). Static: hidden until a transition runs. */
+export function SiteTransition() {
+  return (
+    <div
+      className="site-transition d-flex justify-content-center align-items-center position-fixed t-0 l-0 w-100 vh-100 min-vh-100 z-10000 overflow-hidden visibility-hidden pointer-events-none bg-color-pale-yellow"
+      aria-hidden="true"
+      data-site-transition=""
+    >
+      <div className="site-transition__logo" />
+    </div>
+  );
+}

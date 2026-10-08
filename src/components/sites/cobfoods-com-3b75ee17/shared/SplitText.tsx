@@ -31,6 +31,8 @@ interface SplitTextProps extends HTMLAttributes<HTMLElement> {
   children: ReactNode;
   /** Value of data-splitting; "wordsMask" for most titles, "" for the newsletter popup. */
   splitting?: string;
+  /** Rendered first and left unsplit (the theme moves elements such as a pill into the title after splitting). */
+  leading?: ReactNode;
   [dataAttr: `data-${string}`]: string | undefined;
 }
 
@@ -71,7 +73,7 @@ function splitNode(node: ReactNode, counter: { i: number }, keyPrefix: string): 
   return node;
 }
 
-export function SplitText({ as: Tag = "h2", className = "", splitting = "wordsMask", children, style, ...rest }: SplitTextProps) {
+export function SplitText({ as: Tag = "h2", className = "", splitting = "wordsMask", leading, children, style, ...rest }: SplitTextProps) {
   const ref = useRef<HTMLElement>(null);
   const counter = { i: 0 };
   const split = splitNode(Children.toArray(children), counter, "s");
@@ -114,6 +116,7 @@ export function SplitText({ as: Tag = "h2", className = "", splitting = "wordsMa
       style={{ ...style, "--word-total": wordTotal, "--line-total": 1, "--wordsMask-total": 0 } as CSSProperties}
       {...rest}
     >
+      {leading}
       {split}
     </Tag>
   );

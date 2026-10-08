@@ -198,11 +198,14 @@ class SiteScrollEngine {
     window.scrollTo({ top: y, behavior: opts.smooth === false ? "auto" : "smooth" });
   }
 
-  private onStopRequest = () => {
+  /** `SiteScroll.stop` (true = also hide the scrollbar, as overlays like the nav and cart do). */
+  private onStopRequest = (hideScrollbar?: boolean) => {
     this.data.wheelEnabled = false;
     this.data.isMouseWheeling = false;
+    if (hideScrollbar) document.documentElement.classList.add("--js-scrollbar-hidden");
   };
   private onStartRequest = () => {
+    document.documentElement.classList.remove("--js-scrollbar-hidden");
     this.data.wheelEnabled = true;
     this.data.scroll = this.data.targetScroll = this.data.lastScroll = window.scrollY;
   };

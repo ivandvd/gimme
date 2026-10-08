@@ -52,7 +52,8 @@ function TestimonialCard({ t, extraClass }: { t: Testimonial; extraClass: string
       className={`pb-row-testimonials__testimonial d-flex flex-column justify-content-center align-items-center ${extraClass}`}
     >
       <blockquote className="pb-row-testimonials__testimonial__text ta-center m-0 ff-heading tt-uppercase lh-none fz-20 fz-md-28 fz-xl-32">
-        {t.text}
+        {/* The source text is wrapped in whitespace, which renders as a space inside the CSS quote marks. */}
+        {` ${t.text} `}
       </blockquote>
       <figcaption className="pb-row-testimonials__testimonial__credit fz-14 fz-md-18 fz-xl-20 lh-none tt-uppercase mt-20 mt-md-60">
         {t.credit}

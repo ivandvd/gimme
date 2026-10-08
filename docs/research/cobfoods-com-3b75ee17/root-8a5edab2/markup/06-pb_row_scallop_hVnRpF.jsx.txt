@@ -1,5 +1,0 @@
-<section id="shopify-section-template--18900032094380__pb_row_scallop_hVnRpF" className="shopify-section layout-pb-row-scallop">
-  <div className="scallop position-absolute l-0 w-100 z-0 pointer-events-none --orientation-up --position-top --animation-left pb-row-scallop" data-scroll="" data-scroll-call="scallop" data-scroll-repeat="true" data-module="scallop" data-scallop="" data-scallop-color="#a3ce45" data-scallop-animation="left" aria-hidden="true" style={{ color: "#a3ce45" }}>
-    <canvas className="scallop__canvas position-absolute t-0 l-0 w-100 h-100" />
-  </div>
-</section>

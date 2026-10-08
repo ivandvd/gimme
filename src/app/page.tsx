@@ -24,7 +24,7 @@ import { NewsletterSection } from "@/components/sites/cobfoods-com-3b75ee17/root
 import { SiteFooter } from "@/components/sites/cobfoods-com-3b75ee17/root-8a5edab2/SiteFooter";
 import { SiteVideo } from "@/components/sites/cobfoods-com-3b75ee17/root-8a5edab2/SiteVideo";
 
-/** https://cobfoods.com/ — same body structure as the Shopify theme (see docs/research/…/PAGE_TOPOLOGY.md). */
+/** https://cobfoods.com/ — same body structure as the Shopify theme. */
 export default function Home() {
   return (
     <>

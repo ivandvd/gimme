@@ -1,5 +1,0 @@
-<div id="shopify-section-template--18900032094380__165470451913e238c4" className="shopify-section">
-  <div id="shopify-block-AcE8zSUJ3cWhKOTdra__gsc_instagram_feed_instafeed_3NGrqe" className="shopify-block shopify-app-block">
-    <div className="gfa-widget GSC-HpJpIUgABWRXWNn" id="AcE8zSUJ3cWhKOTdra__gsc_instagram_feed_instafeed_3NGrqe" />
-  </div>
-</div>

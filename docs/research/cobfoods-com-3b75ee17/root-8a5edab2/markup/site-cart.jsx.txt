@@ -1,4 +1,0 @@
-<div className="site-cart position-fixed z-6000 t-0 l-0 w-100 vh-100 pointer-events-none overflow-hidden" id="site-cart" data-site-cart="" data-ui="site-cart" aria-hidden="true">
-  <div className="site-cart__backdrop position-absolute t-0 r-0 h-100 w-100 bg-color-burgundy" aria-controls="site-cart" aria-expanded="false" />
-  <div className="site-cart__container position-absolute t-0 r-0 h-100 w-100 bg-color-pale-yellow d-flex flex-column" />
-</div>

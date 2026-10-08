@@ -1,3 +1,0 @@
-avigation:{nextEl:".pb-row-featured-posts__nextBtn",prevEl:".pb-row-featured-posts__prevBtn"},pagination:{clickable:!0,el:".pb-row-featured-posts__pagination"},slidesPerGroup:1,slidesPerView:1,slidesOffsetAfter:0,slidesOffsetBefore:0,spaceBetween:0,speed:650,breakpoints:{768:{slidesPerGroup:2,slidesPerView:2,spaceBetween:60},1200:{slidesPerGroup:2,slidesPerView:2,spaceBetween:105}}},Ns=function(){function t(e,i){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),this.el=e,this.emitter=i,this.slider=(0,I.$)(".pb-row-featured-posts__slider",this.el),this._swiper=null}var e,i,n;
-return e=t,(i=[
-{key:"init",value:function(){this.slider&&(this._swiper=new 

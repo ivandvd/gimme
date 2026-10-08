@@ -167,7 +167,7 @@ function HeroVideo() {
       autoPlay
       loop
       playsInline
-      {...{ disableremoteplayback: "" }}
+      disableRemotePlayback
       data-scroll=""
       data-scroll-call="video"
       data-scroll-repeat="true"

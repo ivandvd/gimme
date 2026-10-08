@@ -1,0 +1,16 @@
+<section id="shopify-section-template--18900032094380__pb_row_medias_aTG8fV" className="shopify-section section">
+  <div className="pb-row-wrapper pt-0 pb-0 pt-lg-0 pb-lg-0 mt-0 mb-0 mt-lg-0 mb-lg-0 " data-scroll-section="" data-module-delay="" style={{ "--zindex": "0" }}>
+    <div id="pb-row-medias-template--18900032094380__pb_row_medias_aTG8fV" className="pb-row pb-row-medias  --layout-grid-1">
+      <div className="pb-row-medias__grid d-grid grid-gap-20 grid-gap-lg-20 --fullwidth">
+        <figure className="pb-row-medias__media" data-scroll="" data-scroll-offset="100px,0">
+          <div id="pb-row-medias-template--18900032094380__pb_row_medias_aTG8fV-1" className="pb-row-medias__box box box-widescreen overflow-hidden">
+            <div className="pb-row-medias__parallax position-absolute t-0 l-0 r-0 b-0" data-scroll="" data-scroll-target="#pb-row-medias-template--18900032094380__pb_row_medias_aTG8fV-1" data-scroll-speed="0.5">
+              <img src="/sites/cobfoods-com-3b75ee17/root-8a5edab2/images/COB-R2-coloring-21-2_c_1800x.jpg" alt="" width="1334" height="2000" className="pb-row-medias__img image-as-background" />
+            </div>
+          </div>
+          <figcaption className="pb-row-medias__caption d-block ff-body fz-12 lh-none m-0 mt-10 mt-lg-20 p-0 pl-lg-30 pr-lg-20" />
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>

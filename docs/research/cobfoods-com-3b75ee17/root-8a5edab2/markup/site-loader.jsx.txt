@@ -1,0 +1,3 @@
+<div className="site-loader d-flex justify-content-center align-items-center position-fixed t-0 l-0 w-100 vh-100 min-vh-100 z-10000 bg-color-pale-yellow overflow-hidden" aria-hidden="true" data-site-loader="">
+  <div className="site-loader__logo" />
+</div>
